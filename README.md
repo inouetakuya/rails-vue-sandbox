@@ -1,24 +1,29 @@
-# README
+rails-vue-sandbox
+=================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+【動画付き】Rails 5.1 で作る Vue.js アプリケーション ～ Heroku デプロイからシステムテストまで～ - Qiita
+https://qiita.com/jnchito/items/30ab14ebf29b945559f6
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+* Ruby 2.4.2
+* ChromeDriver
 
-* System dependencies
+## Setup
 
-* Configuration
+```
+bundle install
+```
 
-* Database creation
+## Development
 
-* Database initialization
+```
+bundle exec foreman start
+```
 
-* How to run the test suite
+## Testing
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bin/rake test
+bin/rake test:system
+```
