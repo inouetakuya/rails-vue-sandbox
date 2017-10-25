@@ -30,17 +30,6 @@
 // </div>
 
 import Vue from 'vue'
-import App from '../app.vue'
-
-document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    el: '#hello',
-    data: {
-      message: "Can you say hello?"
-    },
-    components: { App }
-  })
-})
 
 // register the grid component
 Vue.component('demo-grid', {
@@ -95,4 +84,21 @@ Vue.component('demo-grid', {
       this.sortOrders[key] = this.sortOrders[key] * -1
     }
   }
+})
+
+// bootstrap the demo
+document.addEventListener('DOMContentLoaded', () => {
+  const demo = new Vue({
+    el: '#demo',
+    data: {
+      searchQuery: '',
+      gridColumns: ['name', 'power'],
+      gridData: [
+        { name: 'Chuck Norris', power: Infinity },
+        { name: 'Bruce Lee', power: 9000 },
+        { name: 'Jackie Chan', power: 7000 },
+        { name: 'Jet Li', power: 8000 }
+      ]
+    }
+  })
 })
