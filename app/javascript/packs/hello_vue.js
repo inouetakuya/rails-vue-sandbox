@@ -29,7 +29,7 @@
 //   <app></app>
 // </div>
 
-import Vue from 'vue/dist/vue.esm'
+import Vue from 'vue'
 import App from '../app.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
