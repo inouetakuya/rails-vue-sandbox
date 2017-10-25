@@ -9,6 +9,11 @@ https://qiita.com/jnchito/items/30ab14ebf29b945559f6
 * Ruby 2.4.2
 * ChromeDriver
 
+```
+brew update
+brew install chromedriver
+```
+
 ## Setup
 
 ```
